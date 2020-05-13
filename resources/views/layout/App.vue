@@ -4,6 +4,10 @@
 
         <div class="flex-grow flex-shrink flex-auto overflow-y-scroll">
             <header class="h-24 px-8 bg-gray-700"></header>
+
+            <div class="m-4">
+                <router-view></router-view>
+            </div>
         </div>
     </div>
 </template>

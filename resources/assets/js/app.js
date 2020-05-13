@@ -8,8 +8,10 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(Element, { locale });
 
 import App from '../../views/layout/App';
+import router from './router';
 
 const app = new Vue({
-  el: '#app',
+    el: '#app',
+    router,
   render: h => h(App)
 });
