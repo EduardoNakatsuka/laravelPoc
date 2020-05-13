@@ -1,8 +1,15 @@
+window.Vue = require('vue');
 
-/**
- * First, we will load all of this project's Javascript utilities and other
- * dependencies. Then, we will be ready to develop a robust and powerful
- * application frontend using useful Laravel and JavaScript libraries.
- */
+import Vue from 'vue';
+import Element from 'element-ui';
+import locale from 'element-ui/lib/locale/lang/pt-br';
+import 'element-ui/lib/theme-chalk/index.css';
 
-require('./bootstrap');
+Vue.use(Element, { locale });
+
+import App from '../../views/layout/App';
+
+const app = new Vue({
+  el: '#app',
+  render: h => h(App)
+});
